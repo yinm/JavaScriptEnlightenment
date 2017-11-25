@@ -1,10 +1,9 @@
-var cody = new Object();
+var myObject = new Object();
 
-cody.living = true;
-cody.age = 33;
-cody.gender = 'male';
-cody.getGender = function() {
-  return cody.gender;
-};
+myObject['0'] = 'f';
+myObject['1'] = 'o';
+myObject['2'] = 'o';
+console.log(myObject);
 
-console.log(cody.getGender());
+var myString = new String('foo');
+console.log(myString);
