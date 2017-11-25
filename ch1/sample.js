@@ -1,17 +1,12 @@
-var codyA = new Object();
-codyA.living = true;
-codyA.age = 33;
-codyA.gender = 'male';
-codyA.getGender = function() {
-  return codyA.gender;
-};
-console.log(codyA);
-
-var Person = function(living, age, gender) {
-  this.living = living;
+var Person = function Person(living, age, gender) {
+  this.living = true;
   this.age = age;
   this.gender = gender;
   this.getGender = function() { return this.gender; };
 };
-var codyB = new Person(true, 33, 'male');
-console.log(codyB);
+
+var cody = new Person(true, 33, 'male');
+
+console.log(typeof cody);
+console.log(cody);
+console.log(cody.constructor);
