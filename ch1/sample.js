@@ -1,9 +1,13 @@
-var myObject = new Object();
+var Person = function(living, age, gender) {
+  this.living = living;
+  this.age = age;
+  this.gender = gender;
 
-myObject['0'] = 'f';
-myObject['1'] = 'o';
-myObject['2'] = 'o';
-console.log(myObject);
+  this.getGender = function() { return this.gender; }
+};
+
+var cody = new Person(true, 33, 'male');
+console.log(cody);
 
 var myString = new String('foo');
 console.log(myString);
