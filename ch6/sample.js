@@ -1,8 +1,10 @@
-const cody = {
-  living: true,
-  age: 33,
-  gender: 'male',
-  getGender: function() { return this.gender; },
-};
+var foo = 'foo';
+const myObject = { foo: 'I am myObject.foo' };
 
-console.log(cody.getGender());
+const sayFoo = function() {
+  console.log(this['foo']);
+};
+myObject.sayFoo = sayFoo;
+
+myObject.sayFoo();
+sayFoo();
